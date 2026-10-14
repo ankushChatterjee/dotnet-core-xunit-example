@@ -27,7 +27,7 @@ namespace dotnet_core_xunit_test
         {
             var result = userController.Get() as OkObjectResult;
 
-            Assert.Equal(200, result.StatusCode);
+            Assert.Equal(201, result.StatusCode);
             Assert.True((result.Value as string[]).Length == 2);
         }
 
